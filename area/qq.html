@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <body>
+    <div class="container mt-5">
+      <h1 class="text-center">Shape Calculator</h1>
+      <form id="shapeForm">
+        <div class="form-group">
+          <label for="shapeSelect">Select a Shape:</label>
+          <select id="shapeSelect" class="form-control">
+            <option value="Rectangle">Rectangle</option>
+            <option value="Circle">Circle</option>
+            <option value="Cylinder">Cylinder</option>
+          </select>
+        </div>
+        <div id="rectangleInputs" style="display: none">
+          <div class="form-group">
+            <label for="rectangleWidth">Width:</label>
+            <input type="number" id="rectangleWidth" class="form-control" />
+          </div>
+          <div class="form-group">
+            <label for="rectangleHeight">Height:</label>
+            <input type="number" id="rectangleHeight" class="form-control" />
+          </div>
+        </div>
+        <div id="circleInputs" style="display: none">
+          <div class="form-group">
+            <label for="circleRadius">Radius:</label>
+            <input type="number" id="circleRadius" class="form-control" />
+          </div>
+        </div>
+        <div id="cylinderInputs" style="display: none">
+          <div class="form-group">
+            <label for="cylinderRadius">Radius:</label>
+            <input type="number" id="cylinderRadius" class="form-control" />
+          </div>
+          <div class="form-group">
+            <label for="cylinderHeight">Height:</label>
+            <input type="number" id="cylinderHeight" class="form-control" />
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary ">Calculate</button>
+      </form>
+      <h2 class="text-center mt-4">Results:</h2>
+      <div id="results" class="container mt-3">
+        <p>Shape: <span id="shapeName"></span></p>
+        <p>Area: <span id="shapeArea"></span></p>
+        <p>Perimeter: <span id="shapePerimeter"></span></p>
+        <div id="shapeDrawing" class="shape"></div>
+      </div>
+    </div>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+<script src="qq.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

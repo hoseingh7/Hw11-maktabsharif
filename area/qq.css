@@ -1,0 +1,32 @@
+/* استایل برای Shape Drawing */
+.shape {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.rectangle {
+  background-color: #007bff;
+}
+.circle {
+  background-color: #ff5722;
+}
+.cylinder {
+  background-color: #4caf50;
+  position: relative;
+}
+
+.btn {
+  margin-top: 5px;
+}
+.cylinder::before {
+  content: "";
+  width: 100px;
+  height: 100px;
+  background-color: #4caf50;
+  border-radius: 50%;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
